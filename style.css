@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+.myImages {
+    height: 250px;
+}
+
+.home a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.renderCartData {
+    height: 350vh;
+    width: 20%;
+    margin-top: -4.3rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.cartImgElement {
+    height: 55px;
+    width: 60px;
+    margin-left: 1rem;
+}
+
+.navbar {
+    background-color: beige;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.renderData {
+    background-color: #fff;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-main {
+    background-color: #fff;
+    width: 380px;
+    margin-left: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-radius: 3px;
+    height: 315px;
+}
+
+.box-main img {
+    height: 200px;
+    width: 200px;
+    padding-top: .3rem;
+}
+
+.productTitle {
+    font-size: 14px;
+    margin-top: .3rem;
+}
+
+.price-element {
+    font-size: 13px;
+    margin-top: .2rem;
+}
+
+.btn-element {
+    padding: .4rem 7rem;
+    margin-top: .5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: rgb(140, 244, 244);
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.cart-styling {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.fa-trash {
+    margin-right: 1rem;
+}
+
+.cart-pprice {
+    font-size: 13px;
+}
+
+.tContainer {
+    margin-top: .5rem;
+    display: none;
+    justify-content: space-between;
+}
+
+.line {
+    display: none;
+    margin-top: 1rem;
+}
+
+#total_price {
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+.tContainer button {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: lightblue;
+    color: black;
+    font-family: "Poppins";
+    padding: .1rem .3rem;
+    cursor: pointer;
+    margin-right: .8rem;
+    font-weight: bold;
+}
+
+.emptyCart h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 2rem;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.cItems {
+    background-color: rgb(48, 189, 235);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cItems h1 {
+    margin-top: 2rem;
+    font-size: 26px;
+    padding: .5rem 0rem;
+}
+
+#inputCard {
+    padding: 5px;
+    border: 2px solid lightblue;
+}
+
+@media (max-width: 991px) {
+    .renderCartData {
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+    }
+
+    .nav-item {
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgba(79, 130, 157, 0.714);
+        padding: 5px 10px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .nav-item:hover{
+        background-color: rgb(127, 200, 255);
+    }
+.d-flex{
+   margin-top: 10px;
+   border: 2px solid rgba(79, 130, 157, 0.714);
+   padding: 5px 10px;
+}
+    .navbar {
+        width: 100%;
+    }
+
+    .box-main {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .btn-element {
+        padding: .4rem 3rem;
+    }
+
+    .tContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        display: block;
+    }
+
+    #navbarNav {
+        background-color: rgb(136, 218, 218);
+        z-index: 1;
+        height: 200px;
+        padding: 5px 10px;
+    }
+
+    .cart-icon {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        position: relative;
+
+    }
+
+    .cart-icon i {
+        font-size: 30px;
+    }
+
+    .cart-icon sup {
+        position: absolute;
+        background-color: #ffffff;
+        font-weight: bold;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+        height: 15px;
+        width: 10px;
+        border-radius: 50%;
+        top: -5px;
+        left: 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:391px) {
+    .home a {
+        text-decoration: none;
+        color: black;
+        border: 1px solid white;
+        padding: 2px 5px;
+        background-color: #fff;
+    }
+
+    #inputCard {
+        width: 100px;
+    }
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.quantity-button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-display {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+@media(max-width:1150px) {
+    .quantity-button {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    .quantity-display {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1140px) and (min-width: 993px) {
+    .quantity-button {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    .quantity-display {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 390px) {
+    .quantity-button {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .quantity-display {
+        margin: 0 3px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .quantity-button {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quantity-display {
+        margin: 0 3px;
+        font-size: 12px;
+    }
+
+    .fa-solid.fa-trash {
+        font-size: 12px;
+    }
+}

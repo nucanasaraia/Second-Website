@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./firstpage.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <style>
+    .navbar-custom {
+      background-color: beige;
+    }
+
+    .cart-icon {
+      margin-right: 1rem;
+      position: relative;
+
+    }
+
+    .cart-icon i {
+      font-size: 30px;
+    }
+
+    .cart-icon sup {
+      position: absolute;
+      background-color: #ffffff;
+      font-weight: bold;
+      padding: 0.2rem 0.5rem;
+      font-size: 12px;
+      height: 15px;
+      width: 10px;
+      border-radius: 50%;
+      top: -5px;
+      left: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      .renderCartData {
+        width: 100%;
+        margin-top: 0;
+        height: auto;
+      }
+
+      .nav-item {
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgba(79, 130, 157, 0.714);
+        padding: 5px 10px;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .nav-item:hover{
+        background-color: rgb(127, 200, 255);
+    }
+.d-flex{
+   margin-top: 10px;
+   border: 2px solid rgba(79, 130, 157, 0.714);
+   padding: 5px 10px;
+}
+
+#navbarNav {
+        background-color: rgb(136, 218, 218);
+        z-index: 1;
+        height: 250px;
+        padding: 5px 10px;
+    }
+
+      .cart-icon {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: start;
+
+      }
+
+      .cart-icon i {
+        font-size: 30px;
+      }
+
+      .cart-icon sup {
+        position: absolute;
+        background-color: #ffffff;
+        font-weight: bold;
+        padding: 0.2rem 0.5rem;
+        font-size: 12px;
+        height: 15px;
+        width: 10px;
+        border-radius: 50%;
+        top: -5px;
+        left: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin-top: 0px;
+    }
+
+    .card {
+      border: 2px solid #1ca0b7;
+      border-radius: 10px;
+      padding: 20px;
+      width: 40%;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .question {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .option {
+      margin: 5px;
+      padding: 10px;
+      cursor: pointer;
+      border: 1px solid;
+    }
+
+    .correct {
+      background-color: rgb(8, 234, 8);
+  
+    }
+
+    .incorrect {
+      background-color: rgb(255, 0, 0);
+    }
+
+    .card button {
+      background-color: lightblue;
+      padding: 5px 10px;
+    }
+
+    .card h1 {
+      color: rgb(91, 180, 207);
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="./firstpage.html">Your Brand</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./firstpage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Shop</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+
+        <div class="cart-icon ms-3">
+          <a href="#"><i class="fas fa-cart-shopping"></i><sup class="dynamic-count">0</sup></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="waht">
+    <div class="caro">
+      <div class="caroLitt">
+        <div class="caroItem"><img src="./trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.webp" alt="">
+          <div class="text-overlay">
+            <p>Browse & Buy: <br> Your Ultimate Online Marketplace</p>
+            <a href="./index.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="caroItem"><img src="./product-drop.jpg" alt="">
+          <div class="text-overlay">
+            <p>Retail Therapy: <br> Explore Our Online Store</p>
+            <a href="./index.html">Shop Now</a>
+          </div>
+        </div>
+        <div class="caroItem"><img src="./YUkLcGAhpsdWfmn6d97UsT.jpg" alt="">
+          <div class="text-overlay">
+            <p>Virtual Shopping Haven: <br> Discover Our Online Collection</p>
+            <a href="./index.html">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect">
+    <div class="container">
+      <div class="card">
+        <h1>Welcome to the Quiz!</h1>
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <button onclick="checkAnswer()">Submit Answer</button>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="loginSection" class="login">
+      <div class="divcall">
+        <p>Have any questions or concerns? <br>
+          We’re always ready to help!</p>
+        <h4>Call us at</h4>
+        <p>123-456-7890 <br>
+          or send us an email to: <br>
+          info@mysite.com</p>
+        <div class="divline2"></div>
+      </div>
+      <div class="sheiyvaneinfo">
+        <form class="form">
+          <p type="Name:"><input placeholder=" Write your name here..." required></input></p>
+          <p type="Email:"><input placeholder=" Write your gmail here..." required></input></p>
+          <p type="Message:"><input placeholder=" What would you like to tell us..." required></input>
+          </p>
+          <div class="subdiv"> <button>Send Message</button></div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="relative-200">
+    <div class="container mx-auto px-4 py-2">
+      <div class="flex flex-wrap text-left lg:text-left">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <div class="mt-6 lg:mb-0 mb-6">
+            <button
+              class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-twitter"></i></button><button
+              class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-facebook-square"></i></button><button
+              class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-instagram"></i></button><button
+              class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button">
+              <i class="fab fa-pinterest"></i>
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">About
+                    Us</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Blog</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="">Github</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Free
+                    Products</a>
+                </li>
+              </ul>
+            </div>
+            <div class="w-full lg:w-4/12 px-4">
+              <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">MIT
+                    License</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Terms
+                    &amp; Conditions</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Privacy
+                    Policy</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="">Contact
+                    Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-blueGray-300">
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./firstpage.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</body>
+
+</html>

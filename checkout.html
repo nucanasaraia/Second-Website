@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins";
+            background-color: rgb(173, 204, 204);
+        }
+
+        .checkout-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .checkout-heading h1 {
+            font-size: 35px;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .input-box button {
+            margin-top: 1rem;
+            height: 35px;
+            width: 400px;
+            cursor: pointer;
+            font-family: "Poppins";
+            background-color: rgb(116, 216, 249);
+            font-weight: bold;
+            font-size: 15px;
+            outline: none;
+            border: 1px solid black;
+        }
+
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-box input {
+            height: 35px;
+            width: 400px;
+            margin-top: 1rem;
+            font-family: "Poppins";
+            padding-left: 1rem;
+            border-radius: 2px;
+            border: 1px solid black;
+            outline: none;
+        }
+        @media (max-width: 991px) {
+    .checkout-heading {
+        margin-top: 20px; 
+    }
+
+    .checkout-heading h1 {
+        font-size: 28px; 
+    }
+
+    .input-box button,
+    .input-box input {
+        width: 100%; 
+        max-width: 400px; 
+    }
+
+    .input-box button {
+        margin-top: 0.5rem;
+    }
+
+    .input-box {
+        padding: 0 10px; 
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="checkout-heading">
+        <h1>Check Out</h1>
+    </div>
+    <div class="inputs-container">
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Enter Your Name" autocomplete="off">
+            <input type="text" id="city" placeholder="Enter Your City" autocomplete="off">
+            <input type="number" id="num" placeholder="Enter Your Number" autocomplete="off">
+            <input type="email" id="email" placeholder="Enter Your Email" autocomplete="off">
+            <input type="text" id="sadress" placeholder="Enter Your Shipping Address" autocomplete="off">
+            <button id="place_order">Place Order</button>
+
+        </div>
+    </div>
+
+
+    <script src="./checkout.js"></script>
+</body>
+
+</html>
